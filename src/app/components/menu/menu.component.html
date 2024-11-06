@@ -1,0 +1,39 @@
+<mat-toolbar>
+  <button mat-icon-button (click)="showMenu()">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <a href="">
+    <span title="Home">Task Manager</span>
+  </a>
+</mat-toolbar>
+<div
+  *ngIf="isShowMenu"
+  class="matToolbarRow"
+  (mouseenter)="openMenu()"
+  (mouseleave)="closeMenu()"
+>
+  <mat-toolbar>
+    <a href="/users" class="toolbarRow">
+      <mat-toolbar-row>
+        <span>Users</span>
+      </mat-toolbar-row>
+    </a>
+    <a href="">
+      <mat-toolbar-row class="toolbarRow">
+        <span>page2</span>
+      </mat-toolbar-row>
+    </a>
+
+    <a href="">
+      <mat-toolbar-row class="toolbarRow">
+        <span>page3</span>
+      </mat-toolbar-row>
+    </a>
+
+    <a href="" class="logout">
+      <mat-toolbar-row>
+        <span>Sair</span>
+      </mat-toolbar-row>
+    </a>
+  </mat-toolbar>
+</div>

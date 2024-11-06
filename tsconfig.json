@@ -3,7 +3,8 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "outDir": "./dist/out-tsc",
+    "outDir": "./dist/",
+    "rootDir": "./src/",
     "strict": true,
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
@@ -29,5 +30,12 @@
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
     "strictTemplates": true
+  },
+  "include": [
+    "src/**/*.ts"
+  ],
+  "paths": {
+    "@angular/*": ["node_modules/@angular/*"],
+      "@angular/material": ["node_modules/@angular/material"]
   }
 }
