@@ -27,6 +27,10 @@ a{
   color: white;
   .logoutIcon {
     transition: all .5s;
-    color: white;
   }
+}
+
+.user{
+  position: absolute;
+  right: 20px;
 }

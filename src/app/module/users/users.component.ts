@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import {MatTableModule} from '@angular/material/table';
 import {MatCardModule} from '@angular/material/card';
 import {MatIconModule} from '@angular/material/icon';
+import {MatButtonModule} from '@angular/material/button';
 
 export interface UsersElement {
   name: string;
@@ -25,7 +26,7 @@ const ELEMENT_DATA: UsersElement[] = [
 @Component({
   selector: 'app-users',
   standalone: true,
-  imports: [MatTableModule, MatCardModule, MatIconModule],
+  imports: [MatTableModule, MatCardModule, MatIconModule, MatButtonModule],
   templateUrl: './users.component.html',
   styleUrl: './users.component.scss'
 })

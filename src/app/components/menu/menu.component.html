@@ -5,6 +5,9 @@
   <a href="">
     <span title="Home">Task Manager</span>
   </a>
+  <button mat-icon-button class="user">
+    <mat-icon fontIcon="person"></mat-icon>
+  </button>
 </mat-toolbar>
 <div
   *ngIf="isShowMenu"
@@ -16,27 +19,27 @@
     <a href="/users" class="toolbarRow">
       <mat-toolbar-row>
         <!-- <span class="material-symbols-outlined">Users</span> -->
-        <mat-icon title="Editar" fontIcon="group" color="primary"></mat-icon>
+        <mat-icon fontIcon="group" color="primary"></mat-icon>
         <span style="margin-left: 5px;">Users</span> 
       </mat-toolbar-row>
     </a>
     <a href="">
       <mat-toolbar-row class="toolbarRow">
-        <mat-icon title="Editar" fontIcon="info" color="primary"></mat-icon>
-        <span style="margin-left: 5px;">Users</span> 
+        <mat-icon fontIcon="view_column" color="primary"></mat-icon>
+        <span style="margin-left: 5px;">Configuration Tasks</span> 
       </mat-toolbar-row>
     </a>
 
     <a href="">
       <mat-toolbar-row class="toolbarRow">
-        <mat-icon title="Editar" fontIcon="info" color="primary"></mat-icon>
-        <span style="margin-left: 5px;">Users</span> 
+        <mat-icon fontIcon="info" color="primary"></mat-icon>
+        <span style="margin-left: 5px;">page</span> 
       </mat-toolbar-row>
     </a>
 
     <a href="" class="logout">
       <mat-toolbar-row>
-        <mat-icon title="Editar" fontIcon="logout" color="primary" class="logoutIcon"></mat-icon>
+        <mat-icon fontIcon="logout" color="primary"></mat-icon>
         <span style="margin-left: 5px;">Users</span> 
       </mat-toolbar-row>
     </a>
