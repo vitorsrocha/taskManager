@@ -1,0 +1,48 @@
+<mat-card appearance="outlined" class="loginCard">
+  <mat-card-content>
+    <div>
+        <mat-label class="title">
+            Task Manager
+        </mat-label>
+    </div>
+    <form>
+      <mat-form-field appearance="fill">
+        <mat-label>Login</mat-label>
+        <input
+          type="text"
+          matInput
+          [formControl]="loginForm"
+          [errorStateMatcher]="matcher"
+          placeholder="login"
+        />
+        @if (loginForm.hasError('required')) {
+            <mat-error>login é <strong>obrigatório</strong></mat-error>
+        }
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Password</mat-label>
+        <input
+          type="password"
+          matInput
+          [formControl]="passwordForm"
+          [errorStateMatcher]="matcher"
+          placeholder="password"
+        />
+        @if (passwordForm.hasError('required')) {
+            <mat-error>password é <strong>obrigatório</strong></mat-error>
+        }
+      </mat-form-field>
+    </form>
+    <div class="passwordForgot">
+        <a href="/login-esqueceu-senha">
+            Forgot password?
+        </a>
+    </div>
+    <div class="btnLogin">
+        <button mat-flat-button (click)="login()">Login</button>
+    </div>
+    <div class="btnRegister" >
+        <button mat-stroked-button (click)="register()">Register</button>
+    </div>
+  </mat-card-content>
+</mat-card>

@@ -8,11 +8,12 @@ import {
   moveItemInArray,
   transferArrayItem,
 } from '@angular/cdk/drag-drop';
+import { MaterialModule } from '../../shared/material.module';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [MenuComponent, CdkDropListGroup, CdkDropList, CdkDrag],
+  imports: [MenuComponent, CdkDropListGroup, CdkDropList, CdkDrag, MaterialModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
